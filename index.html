@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Viorel Dima's Website</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <section>
+	<!--navigation------------------------->
+	<nav>
+	<!--menu-->
+	<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#about-container">About</a></li>
+  <li><a href="#container">Art</a></li>
+	<li><a href="#services">Skills</a></li>
+	<li><a href="#contact-me">Contact</a></li>
+	</ul>
+	<!--bars--------------->
+	<div class="toggle"></div>
+	
+	</nav>
+  </section>
+<!--text----------------------->
+		<div class="text-container">
+			<p>Welcome!</p>
+		    <p>I'm Viorel Dima</p>
+		</div>
+	<!--model---------------------->
+	<img alt="model" class="model" src="images/model.png"> 
+
+<div class="about-container" id="about-container">
+	<!--img-->
+		<img src="images/about-img.png">
+	<!--about-me-text-->
+<div class="about-text">
+		<p>ABOUT</p>
+		<p>Let me introduce myself</p>
+		<p>I am a curious person who loves learning new programs and technologies which can facilitate our life with the touch of a button. I have experience as a freelancer in Graphic Design, where I’ve consistently deepened my knowledge throughout my journey with the clients and their demands. I am a dedicated, hard-working person, open to resolving new challenges and delivering the best products in ahead of time. I am fluent in english and have a good command of german, since I lived in Germany for approximately 4 years.</p>
+		<a href="https://www.behance.net/vioreldima" target="blank"><button class="hire-btn">PORTFOLIO</button></a>
+			<a href="https://drive.google.com/file/d/1R1dCudC2o-_zW0Z02JAb-KnmzR6X12Jt/view?usp=sharing" target="blank" id="container"><button class="down-cv">CHECK CV</button></a>
+		</div>
+	</div>
+
+<h2 style="text-align:center">Some of My Work</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="portfolio/cocktail-1.jpg" style="max-width:100%;max-height:400px">
+  <div class="text">Artworks</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="portfolio/business.jpg" style="max-width:100%;max-height:400px">
+  <div class="text">Business Cards</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="portfolio/cd_cover-1.jpg" style="max-width:100%;max-height:400px">
+  <div class="text">CD Covers</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="portfolio/amuly_poster-1.jpg" style="max-width:100%;max-height:400px">
+  <div class="text">Posters</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="portfolio/Aka_Gold_v1_blackbg_Logo.png" style="max-width:100%;max-height:400px">
+  <div class="text">Logos</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="portfolio/Pumkin_Hat.jpg" style="max-width:100%;max-height:500px">
+  <div class="text">Manipulations</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<!--services-container---------------------------->
+	<div class="services " id="services">
+		<!--text-->
+		<div class="services-text ">
+	<p>Skills</p>
+	<p>I am a curious person who loves learning new programs and technologies which can facilitate our life with the touch of a button. </p>
+	<p>My goal right now is to leverage both my technical and soft skills throughout working on challenging projects.</p>
+			</div>
+		<div class="box-container">
+		<!--1------------->
+			<div class="box-1">
+			<span></span>
+			<p class="heading">Graphic Design</p>
+			<p class="details">Defined as “the art and practice of planning and projecting ideas and experiences with visual and textual content.” In other terms, graphic design communicates certain ideas or messages in a visual way. </p>
+			<a href="https://www.behance.net/gallery/133948009/Portfolio" target="blank"><button>Find Out More</button></a>
+			</div>
+	   <!--2------------->
+			<div class="box-2">
+			<span></span>
+			<p class="heading">3D Modeling</p>
+			<p class="details">The process of developing a mathematical coordinate-based representation of any surface of an object in three dimensions via specialized software by manipulating edges, vertices, and polygons in a simulated 3D space.</p>
+			<a href="https://www.behance.net/gallery/134063593/3D-Modeling" target="blank"><button>Find Out More</button></a>
+			</div>
+			
+		</div>
+	</div>
+<!--if you have any project in your mind contact me-->
+	<div class="contact-me" id="contact-me">
+		<p>CONTACT</p>
+		<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=dimaviorel00@gmail.com" target="blank"><button>Compose a message</button></a>
+	</div>
+<!--footer--------------->
+ <footer>
+	 <!--heading-->
+  <p>Viorel Dima</p>
+	 <!--paragraph-->
+	 <p>All my social media accounts</p>
+	 <!--social-->
+	<div class="social-icons">
+	       <a href="https://www.linkedin.com/in/viorel-dima-a95508167" target="_blank"><i class="fa fa-linkedin"></i></a>
+         <a href="https://www.behance.net/vioreldima" target="_blank"><i class="fa fa-behance"></i></a>
+         <a href="https://www.deviantart.com/dimplays" target="_blank"><i class="fa fa-deviantart"></i></a>
+         <a href="https://github.com/vioreldima" target="_blank"><i class="fa fa-github"></i></a>
+         <a href="https://www.instagram.com/vioreldimaagfx/" target="_blank"><i class="fa fa-instagram"></i></a>
+
+	</div>
+  <!--copyright-->
+	 <p class="copyright">© 2022 Viorel Dima & GT Internet All Rights Reserved</p>
+</footer>
+</footer>
+
+</body>
+</html>
